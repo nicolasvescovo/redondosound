@@ -58,10 +58,8 @@ box-shadow: white 10px 10px 30px;}
 .p-inicio{
     color:rgb(167, 30, 30);
     text-align: center;
-}
-.inicio2{
     border-bottom: rgba(128, 128, 128, 0.356) 2px solid;
-    padding-bottom:1rem;
+    padding-bottom:1.5rem;
 }
 .tapa{
     width: 250px;
