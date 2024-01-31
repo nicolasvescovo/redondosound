@@ -1,0 +1,60 @@
+.hijo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "hijo2 lista"
+    "gulp_h gulp_h";
+    margin-bottom: 100px;
+    .hijo2{
+        grid-area: hijo2;
+        margin-left: 250px;
+        margin-bottom: 100px;
+        .tapa2{
+            width: 350px;
+            margin-left: 100px;
+            margin-top: 100px;
+            box-shadow: 0px 0px 20px $secondary-color;
+            transition: 1s all;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 0px 20px 180px $secondary-color;
+            }
+        }
+    }
+    .lista{
+        grid-area:lista;
+        margin-top: 75px;
+        .temas{
+            margin-left: 40px;
+            color: $secondary-color; 
+            margin-top: 20px;
+            font-size: x-large;
+            font-weight: bold;
+        }
+        .oktubre{
+        margin-top: 100px;
+        }
+    }
+    .gulp_h{
+        grid-area: gulp_h;
+        color: $secondary-color; 
+        padding: 2%;
+        text-align: center;
+        border-top: $secondary-color 3px solid;
+        .gulp_p{
+            font-weight: bold;
+            font-size: large;
+        }
+    }
+    .rocambole{
+        text-decoration: none;
+        color: $secondary-color;
+        &:hover{
+            transition: 0.5 all;
+            transform: scale(1.1);
+            color:gray;
+            text-decoration: underline;
+        }
+    }
+}

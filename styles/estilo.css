@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&family=Single+Day&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body {
+  background-color: black;
+}
+
+header .logo {
+  width: 50px;
+  margin-left: 50px;
+  border-radius: 50%;
+}
+header .rotate-scale-up:hover {
+  animation: rotate-scale-up 2s infinite both;
+  box-shadow: white 10px 10px 30px;
+}
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+header .navbar-nav {
+  margin-left: 7rem;
+  gap: 5rem;
+}
+header .navbar-nav a {
+  color: rgb(167, 30, 30);
+  font-size: x-large;
+  font-weight: bold;
+  background-color: none;
+  transition: 1s all;
+  font-family: "Rock Salt", cursive;
+}
+header .navbar-nav a:hover {
+  transform: scale(1.1);
+}
+
+main .text-focus-in {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+main .section-inicio {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+main .section-inicio .titulo-inicio {
+  color: rgb(167, 30, 30);
+  text-align: center;
+  text-shadow: white 10px 5px 50px;
+  font-family: "Rock Salt", cursive;
+  padding: 2rem;
+}
+main .section-inicio .p-inicio {
+  color: rgb(167, 30, 30);
+  text-align: center;
+  border-bottom: rgba(128, 128, 128, 0.356) 2px solid;
+  padding-bottom: 1.5rem;
+}
+main section .row {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 5rem 3rem;
+}
+main section .tapa {
+  width: 250px;
+  border-radius: 25%;
+}
+main section .tapa:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 10px 40px rgb(145, 39, 39);
+}
+
+footer {
+  background-color: rgba(73, 73, 73, 0.192);
+  box-shadow: white 0px 0px 8px;
+}
+footer .footer-div {
+  padding: 4px;
+}
+footer .footer-div .footer-ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+footer .footer-div .footer-li {
+  transition: 0.5s all;
+}
+footer .footer-div .footer-li:hover {
+  transform: scale(1.4);
+}
+footer .footer-div .footer-links {
+  color: rgb(167, 30, 30);
+  text-decoration: none;
+  transition: 0.5s all;
+}
+footer .footer-div .footer-links:hover {
+  color: white;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "div1 div2" "div3 div3";
+  padding: 30px;
+  gap: 2rem;
+  margin-top: 60px;
+}
+.section .div1 {
+  grid-area: div1;
+  border-right: 3px gray solid;
+  border-bottom: 3px gray solid;
+}
+.section .div2 {
+  grid-area: div2;
+  border-left: 3px gray solid;
+  border-bottom: 3px gray solid;
+}
+.section .div3 {
+  grid-area: div3;
+  border-top: 3px gray solid;
+}
+.section .div {
+  color: rgb(145, 39, 39);
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgba(73, 73, 73, 0.274);
+  font-weight: bold;
+}
+.section .p1 {
+  margin-top: 10%;
+}
+.section .p2 {
+  font-size: 15px;
+  margin-top: 5%;
+}
+.section .h1 {
+  text-align: center;
+  -webkit-text-decoration: underline rgba(201, 11, 11, 0.384);
+          text-decoration: underline rgba(201, 11, 11, 0.384);
+  margin-top: 3%;
+}
+.section .h3 {
+  text-align: center;
+  -webkit-text-decoration: underline rgba(201, 11, 11, 0.384);
+          text-decoration: underline rgba(201, 11, 11, 0.384);
+}
+.section .h2 {
+  text-align: center;
+  -webkit-text-decoration: underline rgba(201, 11, 11, 0.384);
+          text-decoration: underline rgba(201, 11, 11, 0.384);
+}
+
+.hijo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "hijo2 lista" "gulp_h gulp_h";
+  margin-bottom: 100px;
+}
+.hijo .hijo2 {
+  grid-area: hijo2;
+  margin-left: 250px;
+  margin-bottom: 100px;
+}
+.hijo .hijo2 .tapa2 {
+  width: 350px;
+  margin-left: 100px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 20px rgb(145, 39, 39);
+  transition: 1s all;
+}
+.hijo .hijo2 .tapa2:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 20px 180px rgb(145, 39, 39);
+}
+.hijo .lista {
+  grid-area: lista;
+  margin-top: 75px;
+}
+.hijo .lista .temas {
+  margin-left: 40px;
+  color: rgb(145, 39, 39);
+  margin-top: 20px;
+  font-size: x-large;
+  font-weight: bold;
+}
+.hijo .lista .oktubre {
+  margin-top: 100px;
+}
+.hijo .gulp_h {
+  grid-area: gulp_h;
+  color: rgb(145, 39, 39);
+  padding: 2%;
+  text-align: center;
+  border-top: rgb(145, 39, 39) 3px solid;
+}
+.hijo .gulp_h .gulp_p {
+  font-weight: bold;
+  font-size: large;
+}
+.hijo .rocambole {
+  text-decoration: none;
+  color: rgb(145, 39, 39);
+}
+.hijo .rocambole:hover {
+  transition: 0.5 all;
+  transform: scale(1.1);
+  color: gray;
+  text-decoration: underline;
+}
+
+@media (max-width: 1090px) {
+  .hijo2 {
+    margin-left: 10px;
+    margin-top: -20px;
+  }
+}
+@media (max-width: 800px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .div1 {
+    border-top: 3px gray solid;
+    border-bottom: 3px gray solid;
+    border-right: none;
+  }
+  .div2 {
+    border-top: 3px gray solid;
+    border-bottom: 3px gray solid;
+    border-left: none;
+  }
+  .div3 {
+    border-bottom: 3px gray solid;
+  }
+  .form-label {
+    font-size: 25px;
+  }
+  .form-control {
+    width: 90%;
+  }
+  .hijo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hijo2 {
+    margin-left: -100px;
+  }
+  .lista {
+    margin-top: -80px;
+    margin-left: -100px;
+  }
+}
+@media (max-width: 380px) {
+  .hijo2 {
+    margin-left: -60px;
+  }
+  .tapa2 {
+    width: 70%;
+  }
+}
+@media (max-width: 365px) {
+  .hijo2 {
+    margin-left: -70px;
+  }
+  .tapa2 {
+    width: 65%;
+  }
+}/*# sourceMappingURL=estilo.css.map */

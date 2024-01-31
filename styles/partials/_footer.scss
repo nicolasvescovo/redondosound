@@ -1,0 +1,30 @@
+footer{
+    background-color: rgba(73, 73, 73, 0.192);
+    box-shadow: white 0px 0px 8px;
+
+    .footer-div{
+        padding: 4px;
+    
+        .footer-ul{
+            display: flex;
+            justify-content:space-evenly;
+            list-style-type: none;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        .footer-li{
+            transition: .5s all;
+            &:hover{
+            transform: scale(1.4);
+            }
+        }
+        .footer-links{
+            color:$main-color;
+            text-decoration: none;
+            transition: .5s all;
+            &:hover{
+            color:white;
+            }
+        }
+}
+}

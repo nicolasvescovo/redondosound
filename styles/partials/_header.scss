@@ -1,0 +1,26 @@
+header{
+    .logo{
+        width:50px;
+        margin-left: 50px;
+        border-radius: 50%;
+    }
+    .rotate-scale-up:hover{animation:rotate-scale-up 2s  infinite both;
+    box-shadow: white 10px 10px 30px;}
+    @keyframes rotate-scale-up{0%{transform:scale(1) rotateZ(0)}50%{transform:scale(2) rotateZ(180deg)}100%{transform:scale(1) rotateZ(360deg)}}
+    .navbar-nav{
+        margin-left: 7rem;
+        gap:5rem;    
+    
+        a{
+        color: $main-color;
+        font-size: x-large;
+        font-weight: bold;
+        background-color:none;
+        transition: 1s all;
+        font-family: 'Rock Salt', cursive;
+            &:hover{
+            transform: scale(1.1);
+            }
+        }
+    }
+}    

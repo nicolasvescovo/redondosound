@@ -7,13 +7,11 @@
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    
 }
 body{
     background-color: black;
 }
-/* NAV */
-
+/* HEADER & NAV */
 .logo{
     width:50px;
     margin-left: 50px;
@@ -41,8 +39,7 @@ box-shadow: white 10px 10px 30px;}
 
 /* INDEX */
 .text-focus-in{-webkit-animation:text-focus-in 0.5s cubic-bezier(.55,.085,.68,.53) both;animation:text-focus-in 1s cubic-bezier(.55,.085,.68,.53) both}
-
- @-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 .section-inicio{
     display:flex;
     flex-direction: column;
@@ -74,7 +71,6 @@ box-shadow: white 10px 10px 30px;}
     margin-bottom: 40px;
     gap:5rem 3rem;
 }
-/*---------------------------------------------------------------*/
 /* FOOTER */
 footer{
     background-color: rgba(73, 73, 73, 0.192);
@@ -89,7 +85,6 @@ footer{
     list-style-type: none;
     margin-bottom: 20px;
     margin-top: 20px;
-
 }
 .footer-links{
     color:rgb(167, 30, 30);
@@ -104,9 +99,7 @@ footer{
 }
 .footer-li:hover{
     transform: scale(1.4);
-
 }
-/*---------------------------------------------------------------*/
 /* HISTORIA */
 .section{
     display: grid;
@@ -132,13 +125,11 @@ footer{
 .div3{
     grid-area: div3;
     border-top: 3px gray solid;
-    
 }
 .div{
     color:rgb(145, 39, 39);
     border-radius: 15px;
     padding: 20px;
-    /*box-shadow: 0px 0px 10px white;*/
     background-color: rgba(73, 73, 73, 0.274);
     font-weight: bold;
 }
@@ -161,10 +152,7 @@ footer{
 .h2{
     text-align: center;
     text-decoration:underline rgba(201, 11, 11, 0.384);
-    
 }
-/*-------------------------------------------------------------*/
-
 /* cONTACTO */
 .form-label{
     color:rgb(145, 39, 39);
@@ -177,7 +165,6 @@ footer{
 }
 .contacto::after{
     content: " 📧";
-
 }
 .control1{
     width: 40vh;
@@ -201,8 +188,6 @@ footer{
     font-family: 'Rock Salt', cursive;
     border-radius:25px;
 }
-/*-------------------------------------*/
-
 /* GULP Y OKTUBRE */
 .hijo{
     display: grid;
@@ -249,7 +234,6 @@ footer{
 .tapa2{
     box-shadow: 0px 0px 20px rgb(145, 39, 39);
 }
-
 .gulp_p{
     font-weight: bold;
     font-size: large;
@@ -272,7 +256,6 @@ footer{
     color:gray;
     text-decoration: underline;
 }
-/*-------------------------------------------------*/
 /* MEDIA QUERIES */
 @media (max-width: 1090px){
     .hijo2{
