@@ -1,5 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Single+Day&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+.form-label{
+    color:rgb(145, 39, 39);
+    font-size: 30px;
+    font-weight: bold;
+}
+.form-label::after{
+    content: " ⮯";
+    color:rgba(128, 128, 128, 0.534);
+}
+.contacto::after{
+    content: " 📧";
+}
+.control1{
+    width: 40vh;
+}
+.control2{
+    height: 60vh;
+    width: 90vh;
+}
+.mb-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.boton{
+    margin-top:2rem;
+    padding:1rem;
+    color:rgb(167, 30, 30);
+    background-color: rgba(128, 128, 128, 0.705);
+    font-size: 30px;
+    font-family: 'Rock Salt', cursive;
+    border-radius:25px;
+}
 /* MEDIA QUERIES */
 @media (max-width: 1090px){
     .hijo2{
